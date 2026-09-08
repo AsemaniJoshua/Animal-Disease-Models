@@ -1,0 +1,53 @@
+{
+  "model_name": "Goat Anemia Color Judge",
+  "architecture": "MobileNetV3-Small",
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "input_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "input_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "classes": [
+    "Green_Healthy",
+    "Yellow_Borderline",
+    "Red_Severe"
+  ],
+  "class_indices": {
+    "Green_Healthy": 0,
+    "Yellow_Borderline": 1,
+    "Red_Severe": 2
+  },
+  "audio_triggers": {
+    "Green_Healthy": {
+      "hausa": "hausa_healthy.mp3",
+      "dagbani": "dagbani_healthy.mp3",
+      "gurune": "gurune_healthy.mp3",
+      "advice_en": "Your animal has healthy blood. No medicine is needed today.",
+      "color": "#28a745"
+    },
+    "Yellow_Borderline": {
+      "hausa": "hausa_warning.mp3",
+      "dagbani": "dagbani_warning.mp3",
+      "gurune": "gurune_warning.mp3",
+      "advice_en": "Your animal is getting weak. Check its food, isolate it, and monitor for worsening pale eyes.",
+      "color": "#ffc107"
+    },
+    "Red_Severe": {
+      "hausa": "hausa_danger.mp3",
+      "dagbani": "dagbani_danger.mp3",
+      "gurune": "gurune_danger.mp3",
+      "advice_en": "Your animal is very pale and weak inside. It has blood worms. Administer dewormer medicine today immediately.",
+      "color": "#dc3545"
+    }
+  }
+}

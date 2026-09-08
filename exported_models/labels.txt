@@ -1,0 +1,3 @@
+Green_Healthy
+Yellow_Borderline
+Red_Severe

@@ -1,0 +1,7 @@
+# Auto-generated YOLO dataset config
+path: 'C:/Users/JOSHUA ASEMANI/Music/models/Animal-Disease-Models/processed_data/yolo'
+train: images/train
+val: images/val
+
+names:
+  0: eye
