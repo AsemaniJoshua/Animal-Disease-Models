@@ -93,10 +93,8 @@ def prepare_yolo_dataset(val_ratio: float = 0.2, seed: int = 42, max_samples: in
     copy_and_write(train_samples, YOLO_IMAGES_TRAIN, YOLO_LABELS_TRAIN, "TRAIN")
     copy_and_write(val_samples, YOLO_IMAGES_VAL, YOLO_LABELS_VAL, "VAL")
 
-    # Update dataset_yolo.yaml with absolute path for reliable training
-    abs_yolo_dir = YOLO_PROCESSED_DIR.resolve().as_posix()
-    yaml_content = f"""# Auto-generated YOLO dataset config
-path: '{abs_yolo_dir}'
+    yaml_content = """# Auto-generated YOLO dataset config
+path: ../processed_data/yolo
 train: images/train
 val: images/val
 
